@@ -10,7 +10,7 @@ public class UniversityEnrollmentSystem {
         try {
             // Load MySQL JDBC driver and establish connection
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/project", username, password);
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/univ", username, password);
             if (connection != null) {
                 System.out.println("Database connection established successfully.");
             } else {
