@@ -9,7 +9,7 @@ public class UniversityEnrollmentSystem {
     public UniversityEnrollmentSystem() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/batabase_name", username, password);
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/database_name", username, password);
             if (connection != null) {
                 System.out.println("Database connection established successfully.");
             } else {
